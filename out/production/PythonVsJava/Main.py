@@ -8,6 +8,4 @@ for number in numbers:
     if number > maximum:
         maximum = number
 
-
 print("The maximum value is", maximum)
-
