@@ -82,3 +82,61 @@ print(math.log(math.e))
 print(math.sin(math.pi/2))
 
 
+#Text Types
+#Strings in Python are immutable* -
+# just like in Java. When you modify strings,
+# new memory is allocated.
+
+first_string="Hello World"
+second_string='Hello python'
+
+multi_line_strings='''
+this can
+even hold
+multi  line brekes
+'''
+
+#String Conversion
+num =42
+print("the number is "+str(num))
+print("the number is ",(num))
+
+# print("The number is " + num)
+# 💥 TypeError: can only concatenate str (not "int") to str
+
+
+# ./python/m04_string_concatenation.py#L1-L7
+
+a = "How"
+b = "to"
+c = "concatenate"
+d = "strings"
+
+result=" ".join([a,b,c,d]);
+print (result)
+
+#* The equivalent of a StringBuilder in Java would be io.StringIO in Python.
+
+#Boolean Types
+x=True
+y=False
+print("x or y =", x or y)    # logical or
+print("x and y =", x and y)  # logical and
+print("not x =", not x)      # logical not
+
+
+
+#Bitwise Expressions
+# ./python/m04_bitwise_expressions.py
+
+port    = 0b1011_1011
+bitmask = 0b0010_0000
+
+is_bit_set = port & (bitmask >> 1)
+
+# we learn more about formatting in the next module ...
+print("dec:", is_bit_set)
+print(f"bin: {is_bit_set:08b}")
+
+# > dec: 16
+# > bin: 00010000
