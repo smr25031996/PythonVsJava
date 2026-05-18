@@ -47,3 +47,38 @@ print("Adding one meter on that, we are at", min_milky_way_diameter_plus_one, "m
 
 # > Woooooow, the milky way is at least 1608324180338736000000 meters in diameter!
 # > Adding one meter on that, we are at 1608324180338736000001 meters.
+
+
+
+#Numeric Types 3/4: Mathematical Expressions
+
+x=10.5
+y=-3
+
+print("x + y = ",x+y)
+print("x - y = ",x-y)
+print("x / y = ",x/y) #normal
+print("x // y = ",x//y)#integer
+print("x % y = ",x%y)#integer
+
+
+print("abs(y) =", abs(y))
+print("int(x) =", int(x))
+print("float(y ) =", float(y))
+print("complex(x,y) = ",complex(x,y))
+
+print("pow(x, 3) =", pow(x, 3))          # exponentiation
+print("x ** 3 =", x ** 3)                # exponentiation (alternative syntax)
+
+
+
+
+#Numeric Types 4/4: Mathematical Functions
+import math
+print(int(math.sqrt(16)))
+
+print(math.factorial(6))
+print(math.log(math.e))
+print(math.sin(math.pi/2))
+
+
